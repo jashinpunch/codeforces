@@ -1,0 +1,17 @@
+syntax on
+set tabstop=4
+set expandtab
+
+set number
+
+set backspace=indent,eol,start " more powerful backspacing
+
+inoremap " ""<left>
+inoremap ' ''<left>
+
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+
+inoremap {<CR> {<CR>}<ESC>O<TAB>
+inoremap {;<CR> {<CR>};<ESC>O<TAB>
